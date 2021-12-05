@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_desktop.css">
+    <script src="https://kit.fontawesome.com/4ce637ec4c.js" crossorigin="anonymous"></script>
+  <!--  <link rel="shortcut icon" href="./Imagens/favicon.jpg" type="image/x-icon" />-->
+    <title>Cifra de Cesar / Base64</title>
+</head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <h1>Cifra de Cesar / Base64</h1>
+            </div>
+            <nav>
+                <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/isaac-costa2021/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/systemilc/" target="blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="mailto:isaac.systemilc@gmail.com" target="blank"><i class="fas fa-envelope-square"></i></i></a></li>
+                </ul>
+            </nav>
+
+        </header>    
+
+    <main>
+        <section class="titulo_entrada_texto">
+        <h2>Codificador e decodificador - Resilia</h2>
+    <form>
+        <div class="radios">
+            <input type="radio" name="tipo_acao" id="codificar">Codificar
+            <input type="radio" name="tipo_acao" id="decodificar"> Decodificar
+        </div>
+
+        <select id="tipoCodigo">
+            <option value="Selecione">Selecione uma codificação</option>
+            <option value="asci">Asci</option>
+            <option value="base64">Base 64</option>
+        </select>
+
+
+        <div id="passos">
+            <span id="txtPassos">passos: </span> 
+            <button onclick="voltar()">-</button>
+		
+            <div id="valPassos">1</div>
+            
+            <button onclick="avancar()">+</button><br/><br/>
+        </div>
+
+        <span class="separador_texto">
+            <label for="entradaDeTexto">Entre com a palavra ou texto que deseja codificar ou decodificar</label>
+            <input type="text" id="entradaDeTexto"/>
+           
+            <button onclick="calcular()" id="big">Calcular</button>
+            <span id="saida"></span>
+        </span>
+    </form>
+    </section>
+    <div id="resultado" > 
+
+    </div>
+    <section>
+
+    </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
