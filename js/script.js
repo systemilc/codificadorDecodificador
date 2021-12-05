@@ -34,7 +34,20 @@ function avancar() {
         
     }
 }
+function calcular() {
+    var input = document.getElementById("entradaDeTexto").value.toUpperCase();
+    var result = "";
 
+    for(var i = 0; i<input.length; i++){ 
+
+        var posicao = input.charCodeAt(i)-64;
+        var deslocamento = (posicao + valPassos) % 26; 
+        deslocamento = deslocamento == 0 ? 26 : deslocamento; 
+        result += alfabeto[deslocamento-1]; 
+    }
+
+    document.getElementById("saida").innerHTML = result;
+}
 
 
 
