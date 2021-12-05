@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style_desktop.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
     <script src="https://kit.fontawesome.com/4ce637ec4c.js" crossorigin="anonymous"></script>
   <!--  <link rel="shortcut icon" href="./Imagens/favicon.jpg" type="image/x-icon" />-->
     <title>Cifra de Cesar / Base64</title>
@@ -24,7 +25,7 @@
             </nav>
 
         </header>    
-
+<div class="corpo">
     <main>
         <section class="titulo_entrada_texto">
         <h2>Codificador e decodificador - Resilia</h2>
@@ -43,18 +44,20 @@
 
         <div id="passos">
             <span id="txtPassos">passos: </span> 
-            <button onclick="voltar()" type="button">-</button>
+            <button onclick="voltar()" type="button" class="altPassos">-</button>
 		
-            <div id="valPassos">1</div>
+            <div id="valPassos">7</div>
             
-            <button onclick="avancar()" type="button">+</button>
+            <button onclick="avancar()" type="button" class="altPassos">+</button>
         </div>
 
         <span class="separador_texto">
             <label for="entradaDeTexto">Entre com a palavra ou texto que deseja codificar ou decodificar</label>
-            <input type="text" id="entradaDeTexto"/>
+            <textarea name="" id="entradaDeTexto" cols="30" rows="10"></textarea>
+            
+         <!--   <input type="text" id="entradaDeTexto"/>-->
            
-            <button onclick="calcular()" id="big" type="button">Calcular</button>
+            <button onclick="calcular()" id="botao" type="button">Calcular</button>
             <span id="saida"></span>
         </span>
     </form>
@@ -66,8 +69,8 @@
 
     </section>
     </main>
-
-    <footer>
+</div>
+   <footer>
 
 
     </footer>
