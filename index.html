@@ -31,8 +31,8 @@
         <h2>Codificador e decodificador - Resilia</h2>
     <form>
         <div class="radios">
-            <input type="radio" name="tipo_acao" id="codificar">Codificar
-            <input type="radio" name="tipo_acao" id="decodificar"> Decodificar
+            <input type="radio" name="tipo_acao" class="codificar">Codificar
+            <input type="radio" name="tipo_acao" class="codificar"> Decodificar
         </div>
 
         <select id="tipoCodigo">
@@ -41,24 +41,26 @@
             <option value="base64">Base 64</option>
         </select>
 
-
-        <div id="passos">
+<input type="number" id="passos">
+        <!-- <div id="passos">
             <span id="txtPassos">passos: </span> 
             <button onclick="voltar()" type="button" class="altPassos">-</button>
 		
             <div id="valPassos">7</div>
             
             <button onclick="avancar()" type="button" class="altPassos">+</button>
-        </div>
+        </div> -->
 
         <span class="separador_texto">
             <label for="entradaDeTexto">Entre com a palavra ou texto que deseja codificar ou decodificar</label>
             <textarea name="" id="entradaDeTexto" cols="30" rows="10"></textarea>
             
-         <!--   <input type="text" id="entradaDeTexto"/>-->
+         <!--   RETIRADO ONCLINCK BOTAO-->
            
-            <button onclick="calcular()" id="botao" type="button">Calcular</button>
-            <span id="saida"></span>
+             <button id="botao">Calcular</button> 
+            
+             <textarea name="" id="saida" cols="30" rows="10"></textarea>
+
         </span>
     </form>
     </section>
