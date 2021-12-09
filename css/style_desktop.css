@@ -26,7 +26,7 @@
     }
     .cabecalho{
         margin-left: 5%;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         color: #FFD000;
         transition: all 0.5s;
@@ -81,6 +81,12 @@
     
     }
 
+    .corpo{
+        height: 100vh;
+        align-items: center;
+
+    }
+
     main{
         margin: 10px;
         flex-direction: column;
@@ -114,53 +120,49 @@
 
 #entradaDeTexto{
     padding: 10px;
-    width: 600px;
+    width: 599px;
     height: 80px;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
-
-}
-#saida_texto{
-    padding: 5px;
-    width: 600px;
-    height: 80px;
-
 }
 
-#passos{
+.chaves{
     display: none;
+    width: 180px;
+    height: 30px;
+    margin-left: 210px;
     margin-top: 10px;
     justify-content: center;
+   
 }
 
-.altPassos{
-    width: 50px;
-    height: 25px;
-    border-radius: 10px;
-    background-image: linear-gradient(#08BBE4, #1498C9);
-    margin: 3px;
-   
-    
-}
+
 #botao {
+    font-weight: bold;
     width: 210px;
+    height: 30px;
     margin-top: 10px;
     justify-content: center;
     background-image: linear-gradient(#08BBE4, #1498C9);
+}
+#botao:hover{
+    background-image: linear-gradient(#0495b6, #046081);
 }
 
 #saida{
     margin-top: 10px;
-    width: 550px;
-    height: 150px;
+    width: 599px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
   border: 2px solid black;
     color: black;
-    background: yellow
+    background: rgb(236, 236, 235) ;
+    text-align: center;
+    padding: 20px;
     
 }
 
@@ -168,7 +170,7 @@ footer{
     width: 100%;
     height: 70px;
     background-image: linear-gradient(#08BBE4, #1498C9);
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     
