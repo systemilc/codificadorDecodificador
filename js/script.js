@@ -8,16 +8,20 @@ var botao = document.querySelector('#botao')
 botao.addEventListener('click', function(event){
     event.preventDefault()
     var tipoCodigo = document.querySelector("#tipoCodigo").value
+
+
     if(radio[0].checked && tipoCodigo == 'asci'){
         var valTexto = entradaDeTexto.value.split('')
         var valPassos = parseInt(passos.value)
         saidadaDeTexto.value = encriptar(valTexto, valPassos) 
        
-    }else if(radio[1].checked && tipoCodigo == 'asci'){
+    }else if(radiopoCodig[1].checked && tio == 'asci'){
         var valTexto = entradaDeTexto.value.split('')
         var valPassos = parseInt(passos.value)
         saidadaDeTexto.value = descriptar(valTexto, valPassos)
-    }else if(radio[0].checked && tipoCodigo == "base64"){
+    }
+    
+    else if(radio[0].checked && tipoCodigo == "base64"){
         var valTexto = entradaDeTexto.value
         saidadaDeTexto.value = btoa(valTexto)
     }else if(radio[1].checked && tipoCodigo == "base64"){
@@ -30,7 +34,7 @@ botao.addEventListener('click', function(event){
     
 
 
-selecionar = document.addEventListener('click',  function(){
+selecionar = document.addEventListener('change',  function(){
 
 var selecao = document.querySelector('#tipoCodigo').value
 if(selecao === "asci"){
