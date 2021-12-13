@@ -15,7 +15,7 @@ botao.addEventListener('click', function(event){
         var valPassos = parseInt(passos.value)
         saidadaDeTexto.value = encriptar(valTexto, valPassos) 
        
-    }else if(radiopoCodig[1].checked && tio == 'asci'){
+    }else if(radio[1].checked && tipoCodigo == 'asci'){
         var valTexto = entradaDeTexto.value.split('')
         var valPassos = parseInt(passos.value)
         saidadaDeTexto.value = descriptar(valTexto, valPassos)
